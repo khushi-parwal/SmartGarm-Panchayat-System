@@ -16,19 +16,6 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
-// app.use(express.urlencoded({ extended: true }));
-// // Configure session
-// app.use(
-//   session({
-//     secret: 'smartgram@2024', // Replace with a strong secret key
-//     resave: false,
-//     saveUninitialized: false,
-//     cookie: { secure: false }, // Set to `true` in production with HTTPS
-//   })
-// );
-
-
-
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 // Middleware
