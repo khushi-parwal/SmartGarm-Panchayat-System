@@ -1,0 +1,83 @@
+/* CSS for MyComplaints Component */
+.my-complaints {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .my-complaints h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .my-complaints .error {
+    color: #ff4d4d;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .my-complaints ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .my-complaints li {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .my-complaints li:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .my-complaints li h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .my-complaints li p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.3rem 0;
+  }
+  
+  .my-complaints li p:last-child {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  @media (max-width: 600px) {
+    .my-complaints {
+      padding: 1rem;
+    }
+  
+    .my-complaints h1 {
+      font-size: 1.5rem;
+    }
+  
+    .my-complaints li {
+      padding: 0.8rem;
+    }
+  
+    .my-complaints li h2 {
+      font-size: 1.2rem;
+    }
+  
+    .my-complaints li p {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,137 @@
+
+  
+    .register-container{box-sizing: border-box;
+
+      position: absolute;
+      width: 650px;
+      height: 860px;
+      /* left: calc(50% - 650px/2 - 326px); */
+      top: 25px;
+      left: 10%;
+    
+      background: #feffff;
+      border: 1px solid #000000;
+      /* Drop Shadow/600 */
+      box-shadow: 0px 16px 32px -8px rgba(12, 12, 13, 0.4);
+      border-radius: 40px;}
+
+
+  .register-container h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  .input-group1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #ddd8d8;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+  
+    margin-right: 10px;
+    width: 550px;
+    margin-left: 50px;
+    font-size: 15px;
+    box-shadow: 0px 6px 8px -8px rgba(12, 12, 13, 0.4);
+    
+  }
+  .space{
+    padding-left: 15px;
+    width: 400px;
+  
+  }
+  
+  .input-group1 input{
+    border: none;
+    outline: none;
+    width: 400px;
+    font-size: 16px;
+  }
+  
+  .input-group1 input::placeholder {
+    color: #101010;
+    width: 300px;
+  }
+  
+  .drop-down select {
+    appearance: none;
+    padding: 10px;
+    width: 550px;
+    box-shadow: 0px 6px 8px -8px rgba(12, 12, 13, 0.4);
+
+  }
+  .drop-down{
+    margin-right: 10px;
+    width: 570px;
+    margin-left: 20px;
+    font-size: 15px;
+    padding: 10px;
+    
+    
+    
+  }
+
+  
+  .terms {
+    text-align: center;
+    font-size: 16px;
+    color: #151515;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #00aaff;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .mirror-icon {
+    transform: scaleX(-1);
+  }
+
+  .thank-you-message {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .thank-you-message h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+  }
+  
+  .thank-you-message p {
+    font-size: 18px;
+   
+    color: #000;
+  }
+  .register-over{
+    /* width: 108vh; */
+    height: 900px;
+    box-shadow: inset 0 0 2000px rgba(0 0 0 0.5);
+    background-image: url("./signup.png");
+    background-size: cover;
+    display: flex;
+    margin-left: 30%;
+    /* margin-top: 1opx; */
+    background-color: #E0F1FF;;
+    
+    
+}
+  
+  

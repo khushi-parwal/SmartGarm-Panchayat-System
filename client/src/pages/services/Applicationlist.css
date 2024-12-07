@@ -1,0 +1,39 @@
+.application-list {
+    padding: 20px;
+    background-color: white;
+    
+  }
+  
+  .application-item {
+    border: 1px solid #171717;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    color: #07304f;
+    
+  }
+  
+  .application-item h3 {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: left;
+    color: black;
+  }
+  .application-item p{
+    text-align: left;
+    color: black;
+  }
+  
+  .id-proof img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    
+  }
+  .id-proof h4{
+    text-align:left;
+  }
+  

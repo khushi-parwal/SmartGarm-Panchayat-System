@@ -1,0 +1,55 @@
+/* wardentry.css */
+
+.ward-entry-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 1rem;
+    background-color: #fff;
+    
+    /* border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .ward-entry-list {
+    list-style-type: none;
+    padding: 10px;
+    
+  }
+  .ward-entry-list ul li{
+    margin: 10px auto;
+  }
+  
+  .ward-entry-item {
+    /* border-bottom: 1px solid #ddd;
+    padding: 1rem 0; */
+    border: 2px solid #171717;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    color: #07304f;
+  }
+  
+  .ward-entry-item:last-child {
+    /* border-bottom: none; */
+  }
+  
+  .ward-entry-item h2 {
+    color: #092552;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  
+  .ward-entry-item p {
+    color: #661b1b;
+    margin: 0.7rem 0;
+    text-align: left;
+  }
+  

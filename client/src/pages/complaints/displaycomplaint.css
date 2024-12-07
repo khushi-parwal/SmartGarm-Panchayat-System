@@ -1,0 +1,161 @@
+/* complaintnew.css
+.complaint-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  border: 1px solid black;
+  height: 100vh;
+}
+
+.complaint-list h2 {
+  text-align: center;
+  color: #060606;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.complaint-item {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.complaint-item h3 {
+  color: #007BFF;
+  font-size:20px;
+  margin-bottom: 10px;
+}
+
+.complaint-item p {
+  color: #101010;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.complaint-item .complaint-images {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #1b1a1a;
+  border-radius: 4px;
+  padding: 5px;
+  display: inline-block;
+  
+}
+.complaint-images .img-1{
+     width: 50%;
+     margin-bottom: 10px;
+}
+.complaint-images .img-2{
+  width: 50%;
+  height: 20px;
+  margin-bottom: 10px;
+  
+}
+ */
+/* Main container for the complaint list */
+.complaint-list {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.complaint-list h2 {
+  font-size: 1.8rem;
+  color: #060606;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Complaint item styling */
+.complaint-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.complaint-list li {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Complaint details styling */
+.complaint-list li h3 {
+  font-size: 1.5rem;
+  color: #0e0e0e;
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.complaint-list li p {
+  font-size: 1rem;
+  color: #191919;
+  margin: 5px 0;
+}
+
+.complaint-list li strong {
+  color: #070707;
+  font-weight: 600;
+}
+
+/* Image container styling */
+.complaint-images {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+/* Individual image styling */
+.complaint-images .img-1, .complaint-images .img-2 {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+}
+
+.complaint-images img {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+  .complaint-list {
+      padding: 15px;
+  }
+
+  .complaint-list h2 {
+      font-size: 1.5rem;
+  }
+
+  .complaint-list li h3 {
+      font-size: 1.2rem;
+  }
+
+  .complaint-list li p {
+      font-size: 0.9rem;
+  }
+
+  .complaint-images {
+      flex-direction: column;
+  }
+
+  .complaint-images .img-1, .complaint-images .img-2 {
+      width: 100%;
+  }
+}

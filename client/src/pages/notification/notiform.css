@@ -1,0 +1,71 @@
+
+
+ 
+  .notification-form {
+    width: 300px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notification-form h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* .notification-form h1::before {
+    content: '\f060';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 10px;
+  } */
+  
+  .notification-form label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  .notification-form input,
+  .notification-form select,
+  .notification-form textarea {
+    width: calc(100% - 22px); /* Adjusted to account for padding and border */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 5px;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  }
+  
+  .notification-form textarea {
+    resize: vertical;
+  }
+  
+  .notification-form .date-icon,
+  .notification-form .time-icon {
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 15px;
+    color: #ccc;
+  }
+  
+  .notification-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .notification-form button:hover {
+    background-color: #0088cc;
+  }
