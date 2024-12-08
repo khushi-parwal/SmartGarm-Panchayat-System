@@ -34,7 +34,7 @@ const adminRoutes=require('./routes/adminRoutes');
 const applicationRoutes=require('./routes/applicationRoutes');
 const complaintRoutes=require('./routes/complaintRoutes');
 const wardRoutes=require('./routes/wardRoutes');
-const notificationRoutes=require('./routes/notificationroutes');
+const notificationRoutes=require('./routes/notificationRoutes');
 const authRoutes = require('./routes/authRoutes');
 const mycomplaintRoutes=require('./routes/mycomplaintRoutes');
 
