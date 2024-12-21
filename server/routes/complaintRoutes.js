@@ -3,10 +3,7 @@ const multer = require('multer');
 const path = require('path');
 const Complaint = require('../models/Complaint');
 
-
-
 const router = express.Router();
-
 
 // Middleware to ensure user is authenticated
 // const ensureAuthenticated = (req, res, next) => {
@@ -17,7 +14,6 @@ const router = express.Router();
 //     }
 //   };
 
-// Configure Multer for file uploads
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, 'uploads/');
@@ -29,9 +25,7 @@ const storage = multer.diskStorage({
 
 
 const upload = multer({ storage });
-
-
-    
+ 
 router.post('/complaint', upload.fields([{ name: 'idProof' }, { name: 'photo' }]), async (req, res) => {
     try {
         
@@ -40,7 +34,7 @@ router.post('/complaint', upload.fields([{ name: 'idProof' }, { name: 'photo' }]
         const photo = req.files.photo[0].path;
 
         const newComplaint = new Complaint({ 
-            userId: req.session.userId, username, phone, address, email, complaintType, complaintDetails, idProof, photo 
+            username, phone, address, email, complaintType, complaintDetails, idProof, photo 
         });
 
         await newComplaint.save();
@@ -50,9 +44,6 @@ router.post('/complaint', upload.fields([{ name: 'idProof' }, { name: 'photo' }]
     }
 });
 
-
-
-// GET route to fetch all complaints
 router.get('/displaycomplaint', async (req, res) => {
     try {
         const complaints = await Complaint.find();
@@ -61,8 +52,6 @@ router.get('/displaycomplaint', async (req, res) => {
         res.status(500).json({ error: 'Error fetching complaints' });
     }
 });
-
-
 
 module.exports = router;
 

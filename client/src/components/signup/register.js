@@ -26,7 +26,7 @@ function Register() {
     setSubmitted(true);
 
     e.preventDefault()
-  axios.post('http://localhost:3000/register',{name,aadhar,email,phone,address,gender,wardno,password})
+  axios.post('https://smartgarm-panchayat-system-4.onrender.com/register',{name,aadhar,email,phone,address,gender,wardno,password})
   .then(response => {
     console.log(response.data);
   })

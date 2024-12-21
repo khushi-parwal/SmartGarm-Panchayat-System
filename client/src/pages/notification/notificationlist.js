@@ -7,7 +7,7 @@ function NotificationList() {
 
   useEffect(() => {
     // Fetch notifications from the server
-    axios.get('http://localhost:3000/getnotification')
+    axios.get('https://smartgarm-panchayat-system-4.onrender.com/getnotification')
       .then((response) => {
         setNotifications(response.data);
         console.log('Notifications fetched successfully:', response.data);

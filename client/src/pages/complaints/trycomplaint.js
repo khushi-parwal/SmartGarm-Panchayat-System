@@ -1,5 +1,3 @@
-
-
 import axios from 'axios';
 import React, { useState } from 'react';
 import "./complaintnew.css";
@@ -35,7 +33,7 @@ const RegisterComplaint1 = () => {
         });
 
         try {
-            const response = await axios.post('http://localhost:3000/complaint', data, {
+            const response = await axios.post('https://smartgarm-panchayat-system-4.onrender.com/complaint', data, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

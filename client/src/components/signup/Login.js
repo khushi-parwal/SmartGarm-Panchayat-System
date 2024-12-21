@@ -14,19 +14,19 @@ function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
     axios
-      .post('http://localhost:3000/login', { username, password })
+      .post('https://smartgarm-panchayat-system-4.onrender.com/login', { username, password })
       .then((response) => {
-        setMessage(response.data.message); // Display success message
+        setMessage(response.data.message); 
         console.log('Login successful:', response.data);
 
         // Save user ID in localStorage to simulate a session
         localStorage.setItem('userId', response.data.userId);
 
-        navigate('/userdash'); // Redirect to dashboard
+        navigate('/userdash'); 
       })
       .catch((error) => {
         if (error.response) {
-          setMessage(error.response.data.message); // Display error message
+          setMessage(error.response.data.message); 
         } else {
           setMessage('An error occurred. Please try again.');
         }

@@ -9,7 +9,7 @@ const Header = () => {
 
   const handleLogout = () => {
     localStorage.removeItem('userId'); // Clear local storage
-    navigate('/'); // Redirect to login page
+    navigate('/'); // Redirect to home page
   };
   
 

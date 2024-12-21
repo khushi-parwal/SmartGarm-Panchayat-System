@@ -1,48 +1,3 @@
-// // ComplaintList.js
-// import axios from 'axios';
-// import React, { useEffect, useState } from 'react';
-// import "./displaycomplaint.css"; // Custom CSS for styling
-
-// const ComplaintList = () => {
-//     const [complaints, setComplaints] = useState([]);
-
-//     // Fetch complaint data from backend on component mount
-//     useEffect(() => {
-//         const fetchComplaints = async () => {
-//             try {
-//                 const response = await axios.get('http://localhost:3000/displaycomplaint'); // Adjust URL as needed
-//                 setComplaints(response.data); // Assuming response.data is an array of complaints
-//             } catch (error) {
-//                 console.error('Error fetching complaints:', error);
-//             }
-//         };
-
-//         fetchComplaints();
-//     }, []); // Empty dependency array means this runs once when the component mounts
-
-//     return (
-//         <div className="complaint-list">
-//             <h2>Existing Complaints</h2>
-//             <ul>
-//                 {complaints.map((complaint, index) => (
-//                     <li key={index}>
-//                         <h3>{complaint.complaintType}</h3>
-//                         <p>{complaint.complaintDetails}</p>
-//                         <p><strong>User:</strong> {complaint.username}</p>
-//                         <p><strong>Email:</strong> {complaint.email}</p>
-//                         <div className="complaint-images">
-//                             {complaint.photo && <img src={`http://localhost:3000/${complaint.photo}`} alt="Complaint Issue" />}
-//                             {complaint.idProof && <img src={`http://localhost:3000/${complaint.idProof}`} alt="ID Proof" />}
-//                         </div>
-//                     </li>
-//                 ))}
-//             </ul>
-//         </div>
-//     );
-// };
-
-// export default ComplaintList;
-
 
 // ComplaintList.js
 import axios from 'axios';
@@ -55,7 +10,7 @@ const ComplaintList = () => {
     useEffect(() => {
         const fetchComplaints = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/displaycomplaint');
+                const response = await axios.get('https://smartgarm-panchayat-system-4.onrender.com/displaycomplaint');
                 setComplaints(response.data);
             } catch (error) {
                 console.error('Error fetching complaints:', error);
@@ -79,9 +34,9 @@ const ComplaintList = () => {
                         <p><strong>Address:</strong> {complaint.address}</p>
                         
                         <div className="complaint-images">
-                            <div className="img-1">{complaint.photo && <img src={`http://localhost:3000/${complaint.photo}`} alt="Complaint Issue" />}
+                            <div className="img-1">{complaint.photo && <img src={`https://smartgarm-panchayat-system-4.onrender.com/${complaint.photo}`} alt="Complaint Issue" />}
                             </div>
-                            <div className='img-2'>{complaint.idProof && <img src={`http://localhost:3000/${complaint.idProof}`} alt="ID Proof" />}
+                            <div className='img-2'>{complaint.idProof && <img src={`https://smartgarm-panchayat-system-4.onrender.com/${complaint.idProof}`} alt="ID Proof" />}
                             </div></div>
                     </li>
                 ))}

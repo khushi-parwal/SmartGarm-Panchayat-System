@@ -6,7 +6,7 @@ const Application = require('./../models/Application');
 
 const router = express.Router();
 
-// router.use('/uploads', express.static(path.join("http://localhost:3000/uploads/ANAYA crop(2).png", 'uploads')));
+
 
 // Configure multer for file uploads
 const storage = multer.diskStorage({
@@ -54,7 +54,7 @@ router.get('/applications', async (req, res) => {
       // Map applications to include the full URL for the idProof
       const applicationsWithImageURL = applications.map((application) => ({
         ...application._doc,
-        idProof: application.idProof ? `http://localhost:3000/${application.idProof}` : null,
+        idProof: application.idProof ? `https://smartgarm-panchayat-system-4.onrender.com/${application.idProof}` : null,
       }));
       res.status(200).json(applicationsWithImageURL);
     } catch (error) {
