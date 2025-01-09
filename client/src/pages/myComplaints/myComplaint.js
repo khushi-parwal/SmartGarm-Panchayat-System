@@ -16,7 +16,7 @@ const MyComplaints = () => {
       }
 
       try {
-        const response = await axios.get(`https://smartgarm-panchayat-system-4.onrender.com/mycomplaints/${userId}`);
+        const response = await axios.get(`http://localhost:3000/complaints/${userId}`);
         console.log(response.data); 
         setComplaints(response.data);
       } catch (err) {
@@ -46,3 +46,52 @@ const MyComplaints = () => {
 };
 
 export default MyComplaints;
+
+// import axios from 'axios';
+// import React, { useEffect, useState } from 'react';
+// import "./myComplaint.css";
+
+// const MyComplaints = () => {
+//     const [complaints, setComplaints] = useState([]);
+//     const [error, setError] = useState(null);
+
+//     useEffect(() => {
+//         const fetchComplaints = async () => {
+//             try {
+//                 const response = await axios.get('http://localhost:3000/complaints', {
+//                     withCredentials: true, // Send cookies with the request
+//                 });
+//                 setComplaints(response.data);
+//             } catch (err) {
+//                 setError('Failed to fetch complaints. Please log in.');
+//             }
+//         };
+
+//         fetchComplaints();
+//     }, []);
+
+//     if (error) {
+//         return <div>{error}</div>;
+//     }
+
+//     if (complaints.length === 0) {
+//         return <div>No complaints found.</div>;
+//     }
+
+//     return (
+//         <div className="complaints-container">
+//             <h1>My Complaints</h1>
+//             <ul>
+//                 {complaints.map((complaint) => (
+//                     <li key={complaint._id} className="complaint-item">
+//                         <h3>{complaint.complaintType}</h3>
+//                         <p>{complaint.complaintDetails}</p>
+//                         <small>Status: {complaint.status}</small>
+//                     </li>
+//                 ))}
+//             </ul>
+//         </div>
+//     );
+// };
+
+// export default MyComplaints;

@@ -36,7 +36,7 @@ const complaintRoutes=require('./routes/complaintRoutes');
 const wardRoutes=require('./routes/wardRoutes');
 const notificationRoutes=require('./routes/notificationRoutes');
 const authRoutes = require('./routes/authRoutes');
-const mycomplaintRoutes=require('./routes/mycomplaintRoutes');
+// const mycomplaintRoutes=require('./routes/mycomplaintRoutes');
 
 //use the routers
 app.use('/',userRoutes);
@@ -46,7 +46,7 @@ app.use('/', complaintRoutes);
 app.use('/', wardRoutes);
 app.use('/', notificationRoutes);
 app.use('/', authRoutes);
-app.use('/', mycomplaintRoutes)
+// app.use('/', mycomplaintRoutes)
 
 
 // connectDB();

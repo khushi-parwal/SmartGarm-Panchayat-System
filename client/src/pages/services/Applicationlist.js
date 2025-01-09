@@ -7,7 +7,7 @@ const ApplicationList = () => {
     const [applications, setApplications] = useState([]);
 
     useEffect(() => {
-        axios.get('https://smartgarm-panchayat-system-4.onrender.com/applications')
+        axios.get('http://localhost:3000/applications')
             .then((response) => {
                 setApplications(response.data);
             })

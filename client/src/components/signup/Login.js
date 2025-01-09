@@ -4,7 +4,7 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './loginnew.css';
-
+//http://localhost:3000
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -14,7 +14,7 @@ function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
     axios
-      .post('https://smartgarm-panchayat-system-4.onrender.com/login', { username, password })
+      .post('http://localhost:3000/login', { username, password })
       .then((response) => {
         setMessage(response.data.message); 
         console.log('Login successful:', response.data);

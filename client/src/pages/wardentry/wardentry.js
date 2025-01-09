@@ -25,7 +25,7 @@ function NewWardEntry() {
     };
 
     try {
-      const response = await axios.post('https://smartgarm-panchayat-system-4.onrender.com/wards', wardData);
+      const response = await axios.post('http://localhost:3000/wards', wardData);
       console.log(response.data.message);
       alert('Ward entry added successfully!');
     } catch (error) {
