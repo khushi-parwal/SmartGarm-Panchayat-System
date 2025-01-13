@@ -14,7 +14,7 @@ function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
     axios
-      .post('https://smartgarm-panchayat-system-1.onrender.com/login', { username, password })
+      .post('http://localhost:3000/login', { username, password })
       .then((response) => {
         setMessage(response.data.message); 
         console.log('Login successful:', response.data);

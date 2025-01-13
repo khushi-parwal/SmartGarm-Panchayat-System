@@ -16,7 +16,7 @@ const MyComplaints = () => {
       }
 
       try {
-        const response = await axios.get(`https://smartgarm-panchayat-system-1.onrender.com/complaints/${userId}`);
+        const response = await axios.get(`http://localhost:3000/complaints/${userId}`);
         console.log(response.data); 
         setComplaints(response.data);
       } catch (err) {
@@ -58,7 +58,7 @@ export default MyComplaints;
 //     useEffect(() => {
 //         const fetchComplaints = async () => {
 //             try {
-//                 const response = await axios.get('https://smartgarm-panchayat-system-1.onrender.com/complaints', {
+//                 const response = await axios.get('http://localhost:3000/complaints', {
 //                     withCredentials: true, // Send cookies with the request
 //                 });
 //                 setComplaints(response.data);
