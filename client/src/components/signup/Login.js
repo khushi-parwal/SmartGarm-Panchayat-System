@@ -4,7 +4,7 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './loginnew.css';
-//http://localhost:3000
+
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -14,7 +14,7 @@ function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
     axios
-      .post('http://localhost:3000/login', { username, password })
+      .post('https://smartgarm-panchayat-system-1.onrender.com/login', { username, password })
       .then((response) => {
         setMessage(response.data.message); 
         console.log('Login successful:', response.data);
@@ -78,11 +78,6 @@ function Login() {
 
         {message && <p className="message">{message}</p>}
 
-        {/* <div className="logout-link">
-          <button onClick={handleLogout} className="logout-btn">
-            LOGOUT
-          </button>
-        </div> */}
 
         <div className="signup-link">
           Need an account? <Link to="/register">SIGN UP</Link>

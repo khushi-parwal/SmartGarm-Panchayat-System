@@ -16,7 +16,7 @@ function Alogin() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3000/adminlogin', { username, password })
+    axios.post('https://smartgarm-panchayat-system-1.onrender.com/adminlogin', { username, password })
       .then((response) => {
         setMessage(response.data.message); // Display success message
         console.log('Login successful:', response.data);
