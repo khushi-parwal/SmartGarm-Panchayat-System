@@ -11,15 +11,6 @@
     background-color: #E0F1FF;;
 }
 
-/* Container for the login form */
-/* .login-container {
-    width: 350px;
-    padding: 40px 30px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-} */
 .login-container{
     box-sizing: border-box;
 

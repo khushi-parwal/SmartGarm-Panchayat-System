@@ -16,7 +16,8 @@ const MyComplaints = () => {
       }
 
       try {
-        const response = await axios.get(`http://localhost:3000/complaints/${userId}`);
+        // const response = await axios.get(`http://localhost:3000/complaints/${userId}`);
+        const response = await axios.get(`http://localhost:3000/displaycomplaint`);
         console.log(response.data); 
         setComplaints(response.data);
       } catch (err) {

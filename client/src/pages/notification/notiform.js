@@ -17,26 +17,32 @@ function NotificationForm() {
 
 
 
-  const [responseMessage, setResponseMessage] = useState('');
+  // const [responseMessage, setResponseMessage] = useState('');
 
   const handleChange = (event) => {
+    
     setFormData({
       ...formData,
       [event.target.name]: event.target.value,
     });
+    
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    
     
     axios.post('http://localhost:3000/notifications', formData)
       .then((response) => {
-        setResponseMessage(response.data.message);
+        // setResponseMessage(response.data.message);
         console.log('Notification sent successfully:', response.data);
+        alert('Notification sent successfully');
+        formData.reset();
       })
       
       .catch((error) => {
-        setResponseMessage('Failed to send notification.');
+        // setResponseMessage('Failed to send notification.');
         console.error('Error sending notification:', error);
       });
   };
@@ -79,7 +85,7 @@ function NotificationForm() {
         <button type="submit">SEND NOTIFICATION</button></div>
       </form>
                 
-      {responseMessage && <p>{responseMessage}</p>}
+      {/* {responseMessage && <p>{responseMessage}</p>} */}
     </div></section>
   );
 }

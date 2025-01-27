@@ -46,14 +46,6 @@ router.get('/displaycomplaint', async (req, res) => {
 });
 
 router.get('/complaints/:userId', authenticateUser, async (req, res) => {
-//     try {
-//         const complaints = await Complaint.find({ userId: req.session.userId });
-//         console.log("Received userId:", userId);
-//         res.status(200).json(complaints);
-//     } catch (error) {
-//         res.status(500).json({ message: 'Failed to fetch complaints.', error });
-//     }
-// });
 const { userId } = req.params;
   console.log("Received userId:", userId);
 
